@@ -4,3 +4,4 @@ default_mysql_root_password: access
 default_mysql_user_login: user
 default_mysql_user_password: access
 default_mysql_port: 3306
+mysql_version: 5.7

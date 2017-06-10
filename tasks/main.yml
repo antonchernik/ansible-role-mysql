@@ -2,11 +2,11 @@
   apt_key: url=http://repo.mysql.com/RPM-GPG-KEY-mysql state=present
 
 - name: MySQL ROLE | Adding mysql sources.list deb url
-  lineinfile: dest=/etc/apt/sources.list line="deb http://repo.mysql.com/apt/debian/ {{ debian_codename }} mysql-5.7"
+  lineinfile: dest=/etc/apt/sources.list line="deb http://repo.mysql.com/apt/debian/ {{ debian_codename }} mysql-{{ mysql_version }}"
 
 
 - name: MySQL ROLE | Adding mysql sources.list deb-src url
-  lineinfile: dest=/etc/apt/sources.list line="deb-src http://repo.mysql.com/apt/debian/ {{ debian_codename }} mysql-5.7"
+  lineinfile: dest=/etc/apt/sources.list line="deb-src http://repo.mysql.com/apt/debian/ {{ debian_codename }} mysql-{{ mysql_version }}"
 
 - name: MySQL ROLE | Updating apt cache
   apt:
