@@ -14,25 +14,14 @@ Role Variables
 
 Available variables are listed below, along with default values (see defaults/main.yml):
 
-debian_codename: jessie
+| Parameter | Required | Default | Choices | Comments |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| debian_codename | yes | jessie | | Sets latest debian codename |
+| default_mysql_root_password | yes | access | | Sets MySQL user root password |
+| default_mysql_user_login | yes | user | | Sets default MySQL user name |
+| default_mysql_user_password | yes | access | | Sets default MySQL user password |
+| default_mysql_port | yes | 3306 | | Sets MySQL server port |
 
-Latest debian codename
-
-default_mysql_root_password: [access]
-
-Default mysql root password
-
-default_mysql_user_login: [user]
-
-Default MySQL user login
-
-default_mysql_user_password: [access]
-
-Default MySQL user password
-
-default_mysql_port: [3306]
-
-Default MySQL port
 
 Dependencies
 ------------
