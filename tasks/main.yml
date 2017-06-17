@@ -58,7 +58,3 @@
 - name: MySQL ROLE | Ensure mysql is restarted
   action: service name=mysql state=restarted
   become: true
-
-- name: MySQL ROLE | Flush ipset blacklist
-  shell: "iptables -A INPUT -m set --match-set soho src -p tcp --dport {{ default_mysql_port }} -j ACCEPT"
-  become: true
