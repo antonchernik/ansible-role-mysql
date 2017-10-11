@@ -1,0 +1,8 @@
+---
+- name: MySQL ROLE | Adding mysql sources.list deb url
+  lineinfile: dest=/etc/apt/sources.list line="deb http://repo.mysql.com/apt/ubuntu/ {{ ansible_distribution_release }} mysql-{{ mysql_version }}"
+  become: true
+
+- name: MySQL ROLE | Adding mysql sources.list deb-src url
+  lineinfile: dest=/etc/apt/sources.list line="deb-src http://repo.mysql.com/apt/ubuntu/ {{ ansible_distribution_release }} mysql-{{ mysql_version }}"
+  become: true

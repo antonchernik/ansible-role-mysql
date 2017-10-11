@@ -3,11 +3,15 @@ MySQL
 
 Ansible role for installing mysql 5.7. Tested platforms are:
 * Debian 8
+* Debian 9
+* Ubuntu 16
 
 Requirements
 ------------
 
 Debian 8 (jessie)
+Debian 9 (stretch)
+Ubuntu 16 (xenial)
 
 Role Variables
 --------------
@@ -16,7 +20,6 @@ Available variables are listed below, along with default values (see defaults/ma
 
 | Parameter | Required | Default | Choices | Comments |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| debian_codename | yes | jessie | | Sets latest debian codename |
 | default_mysql_root_password | yes | access | | Sets MySQL user root password |
 | default_mysql_user_login | yes | user | | Sets default MySQL user name |
 | default_mysql_user_password | yes | access | | Sets default MySQL user password |

@@ -1,5 +1,4 @@
 ---
-debian_codename: jessie
 default_mysql_root_password: access
 default_mysql_user_login: user
 default_mysql_user_password: access
